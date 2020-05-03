@@ -1,0 +1,28 @@
+{
+  "name": "eat-da-burger-project",
+  "version": "1.0.0",
+  "description": "This application will allow a user to keep track of burgers he/she wants to eat and have already eaten",
+  "main": "server.js",
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "express-handlebars": "^4.0.4",
+    "init": "^0.1.2",
+    "mysql": "^2.18.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kddayhoff/eat-da-burger-project.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kddayhoff/eat-da-burger-project/issues"
+  },
+  "homepage": "https://github.com/kddayhoff/eat-da-burger-project#readme"
+}
