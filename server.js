@@ -1,8 +1,8 @@
 
 var express = require("express");
-
+// const env = require(".env");
 var PORT = process.env.PORT || 8080;
-
+var dotenv = require('dotenv').config()
 var app = express();
 
 // Serve static content for the app from the "public" directory in the application directory.
@@ -21,7 +21,7 @@ app.set("view engine", "handlebars");
 // Import routes and give the server access to them.
 var routes = require("./controllers/burgers_controller.js");
 
-app.use(routes);
+// app.use(routes);
 
 // Start our server so that it can begin listening to client requests.
 app.listen(PORT, function() {

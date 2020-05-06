@@ -1,10 +1,10 @@
-const mysql = require("mysql");
+var mysql = require("mysql");
 
-const connection = mysql.createConnection({
-  host: DH_HOST,
+var connection = mysql.createConnection({
+  host: "localhost",
   port: 3306,
-  user: DH_USER,
-  password: DH_PASS,
+  user: "root",
+  password: "password",
   database: "burgers_db"
 });
 
