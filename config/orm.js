@@ -1,11 +1,6 @@
 const connection = require("./connection.js");
 
 
-// * `selectAll()`
-// * `insertOne()`
-// * `updateOne()`
-// Import MySQL connection.
-
 // Helper function for SQL syntax.
 // Let's say we want to pass 3 values into the mySQL query.
 // In order to write the query, we need 3 question marks.
