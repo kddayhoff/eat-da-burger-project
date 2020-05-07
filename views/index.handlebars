@@ -2,10 +2,19 @@
 
 <h2>Burgers to Eat</h2>
 
+<li>
+	{{name}}
+
+	<button class="change-burger" data-id="{{id}}" data-eatburger="{{devoured}}">
+		{{#if devoured}}We ate da Burgers{{/if}}
+	</button>
+
+</li>
+
 <ul>
   {{#each burgers}}
-    {{#unless burger}}
-      {{> burgers/burger-block devoured=true}}
+    {{#unless devoured}}
+      {{> burgers devoured=true}}
     {{/unless}}
   {{/each}}
 </ul>
@@ -14,8 +23,8 @@
 
 <ul>
   {{#each burgers}}
-    {{#if burger}}
-      {{> burgers/burger-block devoured=false}}
+    {{#if devoured}}
+      {{> burgers devoured=false}}
     {{/if}}
   {{/each}}
 </ul>
@@ -29,9 +38,9 @@
   </div>
 
   <div class="form-group">
-    <label for="sleepy">Eaten?</label><br>
-    <input type="radio" name="sleepy" value="1" checked> Sleepy!<br>
-    <input type="radio" name="sleepy" value="0"> Awake
+    <label for="devoured">Eaten?</label><br>
+    <input type="radio" name="devoured" value="1" checked> Eaten!<br>
+    <input type="radio" name="devoured" value="0"> Still Hungry
   </div>
 
   <button type="submit">Add Burger</button>
